@@ -1,0 +1,14 @@
+prefix=D:/ffmpeg-3.4.1/bb
+exec_prefix=${prefix}
+libdir=D:/ffmpeg-3.4.1/bb/lib
+includedir=D:/ffmpeg-3.4.1/bb/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 57.107.100
+Requires: 
+Requires.private: libswresample >= 2.9.100, libavutil >= 55.78.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -lm -lz -pthread -pthread
+Cflags: -I${includedir}

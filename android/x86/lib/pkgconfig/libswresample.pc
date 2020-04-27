@@ -1,0 +1,14 @@
+prefix=D:/ffmpeg-3.4.1/bb
+exec_prefix=${prefix}
+libdir=D:/ffmpeg-3.4.1/bb/lib
+includedir=D:/ffmpeg-3.4.1/bb/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 2.9.100
+Requires: 
+Requires.private: libavutil >= 55.78.100
+Conflicts:
+Libs: -L${libdir}  -lswresample 
+Libs.private: -lm
+Cflags: -I${includedir}
