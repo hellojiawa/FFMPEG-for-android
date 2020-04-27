@@ -1,11 +1,11 @@
-### 编译环境
-windows 7
-mingw 6.3.0
-ndk r15c
+### 一、编译环境
+windows 7  
+mingw 6.3.0  
+ndk r15c  
 ffmpeg 3.4.1
 
 
-### 编译前的配置
+### 二、编译前的配置
 下载ndk和ffmpeg3.4.1的源码，修改ffmpeg源码目录中的configure
 ```
 SLIBNAME_WITH_MAJOR='$(SLIBNAME).$(LIBMAJOR)'
@@ -22,11 +22,11 @@ SLIB_INSTALL_LINKS='$(SLIBNAME)'
 ```
 
 
-### 开始编译
-把项目下载下来，根目录已经有3个编辑好的.sh脚本文件。运行脚本文件即可开始编译。
+### 三、开始编译
+把项目下载下来，拷贝3个编辑好的.sh脚本文件至ffmpeg根目录。运行脚本文件即可开始编译。
 
 
-### 我遇到的两个问题
+### 四、我遇到的两个问题
 ##### 问题一
 ```
 arm-linux-androideabi-gcc.exe is unable to create an executable file
